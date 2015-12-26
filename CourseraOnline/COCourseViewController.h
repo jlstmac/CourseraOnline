@@ -8,8 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface COCourseViewController : UIViewController
+@interface COCourseViewController : UIViewController<UIScrollViewDelegate>
 
 @property(nonatomic,weak) IBOutlet UITextView* descriptionView;
+@property(nonatomic,weak) IBOutlet UIScrollView* scrollView;
 
 @end
