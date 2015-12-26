@@ -19,6 +19,11 @@
     self.scrollView.delegate = self;
     CGSize winsize = [UIScreen mainScreen].bounds.size;
     self.scrollView.contentSize = CGSizeMake(winsize.width, winsize.height*2);
+    CGSize textSize = self.descriptionView.contentSize;
+    NSLog(@"w:%f,h:%f",textSize.width,textSize.height);
+    self.descriptionView.contentSize = CGSizeMake(winsize.width, textSize.height);
+    textSize = self.descriptionView.contentSize;
+    NSLog(@"w:%f,h:%f",textSize.width,textSize.height);
     // Do any additional setup after loading the view from its nib.
 }
 
