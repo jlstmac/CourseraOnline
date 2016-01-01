@@ -14,17 +14,20 @@
     self = [super init];
     if (self && dict) {
         self.BasicInfo = basic;
-        self.Categories = [dict valueForKey:@"categories"];
-        self.WorkLoad = [dict valueForKey:@"workload"];
-        self.Description = [dict valueForKey:@"description"];
-        self.PreviewLink = [dict valueForKey:@"previewLink"];
-        self.InstructorIds = [dict valueForKey:@"instructorIds"];
-        self.PartnerIds = [dict valueForKey:@"partnerIds"];
         self.Instructors = [dict valueForKey:@"instructors"];
         self.Partners = [dict valueForKey:@"partners"];
-        self.PrimaryLanguages = [dict valueForKey:@"primaryLanguages"];
 
+    }
+    return self;
+}
 
+-(instancetype)initWithBasicInfo:(COBasicInfo *)basic{
+    self = [super init];
+    if (self && basic) {
+        self.BasicInfo = basic;
+        self.Instructors = nil;
+        self.Partners = nil;
+        
     }
     return self;
 }

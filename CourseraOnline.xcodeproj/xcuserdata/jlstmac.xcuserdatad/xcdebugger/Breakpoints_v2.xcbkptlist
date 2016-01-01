@@ -9,13 +9,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "CourseraOnline/COModel.m"
-            timestampString = "472637795.617409"
+            filePath = "CourseraOnline/COCourseViewController.m"
+            timestampString = "473065680.192034"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "23"
-            endingLineNumber = "23"
-            landmarkName = "+globalTimelinePostsWithBlock:"
+            startingLineNumber = "39"
+            endingLineNumber = "39"
+            landmarkName = "-viewDidLoad"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -25,13 +25,29 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "CourseraOnline/COTableViewCell.m"
-            timestampString = "472648075.565071"
+            filePath = "CourseraOnline/COFavorites.m"
+            timestampString = "473082307.40185"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "37"
-            endingLineNumber = "37"
-            landmarkName = "-setInfo:"
+            startingLineNumber = "36"
+            endingLineNumber = "36"
+            landmarkName = "-insertOneCourse:"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CourseraOnline/COCoursesViewController.m"
+            timestampString = "473091327.351549"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "166"
+            endingLineNumber = "166"
+            landmarkName = "-makeCellByIndexPath:"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>

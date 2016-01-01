@@ -7,6 +7,10 @@
 //
 
 #import "COFavoritesViewController.h"
+#import "COCoursesViewController.h"
+#import "COFavorites.h"
+#import "COCourses.h"
+#import "COTableViewCell.h"
 
 @interface COFavoritesViewController ()
 
@@ -28,6 +32,55 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
 }
+
+-(void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+    [self.tableView reloadData];
+}
+
+#pragma mark - UITableViewDataSource
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
+    return [[COFavorites sharedInstance].myFavorites count];
+}
+
+- (UITableViewCell*)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+    static NSString *CellIdentifier = @"Cell";
+    
+    //reuse cell
+    COTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    if (!cell) {
+        //load cell from ccb
+        NSArray* array = [[NSBundle mainBundle] loadNibNamed:@"COTableViewCell" owner:self options:nil];
+        cell = [array objectAtIndex:0];
+    }
+    
+    cell.info = [[[COFavorites sharedInstance].myFavorites allObjects] objectAtIndex:(NSUInteger)indexPath.row];
+    
+    return cell;
+    
+}
+
+#pragma mark - UITableViewDelegate
+
+- (CGFloat)tableView:(__unused UITableView *)tableView
+heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return 70;
+}
+
+- (void)tableView:(UITableView *)tableView
+didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    
+    COCoursesViewController* vc = [[COCoursesViewController alloc] init];
+    COCourses* courses = [[COCourses alloc] initWithBasicInfo:[[[COFavorites sharedInstance].myFavorites allObjects] objectAtIndex:(NSUInteger)indexPath.row]];
+    [vc setCourse:courses];
+    [self.navigationController pushViewController:vc animated:YES];
+}
+
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

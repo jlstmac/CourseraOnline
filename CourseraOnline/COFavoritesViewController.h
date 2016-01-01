@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface COFavoritesViewController : UIViewController
+@interface COFavoritesViewController : UITableViewController;
 
 @end

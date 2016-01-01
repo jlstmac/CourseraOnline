@@ -10,7 +10,10 @@
 
 @interface COModel : NSObject
 
+
 @property(nonatomic,strong,readwrite) NSArray* BasicInfoArray;
 + (NSURLSessionDataTask *)globalTimelinePostsWithBlock:(void (^)(NSArray *posts, NSError *error))block;
+
++ (NSURLSessionDataTask *)getCoursesById:(NSString*)courseId Block:(void (^)(NSDictionary* posts, NSError* error))block;
 
 @end

@@ -84,12 +84,8 @@
 		E91DEE3B1C2BE2C400ADEC51 /* COTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E91DEE371C2BE2C400ADEC51 /* COTableViewCell.xib */; };
 		E91DEE3C1C2BE2C400ADEC51 /* COTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E91DEE371C2BE2C400ADEC51 /* COTableViewCell.xib */; };
 		E91DEE3D1C2BE2C400ADEC51 /* COTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E91DEE371C2BE2C400ADEC51 /* COTableViewCell.xib */; };
-		E91DEE411C2C0C4200ADEC51 /* COCourseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E91DEE3F1C2C0C4200ADEC51 /* COCourseViewController.m */; };
-		E91DEE421C2C0C4200ADEC51 /* COCourseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E91DEE3F1C2C0C4200ADEC51 /* COCourseViewController.m */; };
-		E91DEE431C2C0C4200ADEC51 /* COCourseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E91DEE3F1C2C0C4200ADEC51 /* COCourseViewController.m */; };
-		E91DEE441C2C0C4200ADEC51 /* COCourseViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E91DEE401C2C0C4200ADEC51 /* COCourseViewController.xib */; };
-		E91DEE451C2C0C4200ADEC51 /* COCourseViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E91DEE401C2C0C4200ADEC51 /* COCourseViewController.xib */; };
-		E91DEE461C2C0C4200ADEC51 /* COCourseViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E91DEE401C2C0C4200ADEC51 /* COCourseViewController.xib */; };
+		E945740F1C326E9600228EF0 /* COCoursesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E945740E1C326E9600228EF0 /* COCoursesViewController.m */; };
+		E9DD68121C2F03A8009C17E8 /* COFavorites.m in Sources */ = {isa = PBXBuildFile; fileRef = E9DD68111C2F03A8009C17E8 /* COFavorites.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -175,9 +171,10 @@
 		E91DEE351C2BE2C400ADEC51 /* COTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = COTableViewCell.h; sourceTree = "<group>"; };
 		E91DEE361C2BE2C400ADEC51 /* COTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = COTableViewCell.m; sourceTree = "<group>"; };
 		E91DEE371C2BE2C400ADEC51 /* COTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = COTableViewCell.xib; sourceTree = "<group>"; };
-		E91DEE3E1C2C0C4200ADEC51 /* COCourseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = COCourseViewController.h; sourceTree = "<group>"; };
-		E91DEE3F1C2C0C4200ADEC51 /* COCourseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = COCourseViewController.m; sourceTree = "<group>"; };
-		E91DEE401C2C0C4200ADEC51 /* COCourseViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = COCourseViewController.xib; sourceTree = "<group>"; };
+		E945740D1C326E9600228EF0 /* COCoursesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = COCoursesViewController.h; sourceTree = "<group>"; };
+		E945740E1C326E9600228EF0 /* COCoursesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = COCoursesViewController.m; sourceTree = "<group>"; };
+		E9DD68101C2F03A8009C17E8 /* COFavorites.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = COFavorites.h; sourceTree = "<group>"; };
+		E9DD68111C2F03A8009C17E8 /* COFavorites.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = COFavorites.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -282,6 +279,8 @@
 				E91DEE271C2B8BF500ADEC51 /* COCourses.m */,
 				E91DEE2B1C2BD9F600ADEC51 /* COBasicInfo.h */,
 				E91DEE2C1C2BD9F600ADEC51 /* COBasicInfo.m */,
+				E9DD68101C2F03A8009C17E8 /* COFavorites.h */,
+				E9DD68111C2F03A8009C17E8 /* COFavorites.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -293,6 +292,8 @@
 				E91DEDBB1C2AA43600ADEC51 /* COHomeViewController.m */,
 				E91DEDC41C2AA91F00ADEC51 /* COFavoritesViewController.h */,
 				E91DEDC51C2AA91F00ADEC51 /* COFavoritesViewController.m */,
+				E945740D1C326E9600228EF0 /* COCoursesViewController.h */,
+				E945740E1C326E9600228EF0 /* COCoursesViewController.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -303,9 +304,6 @@
 				E91DEE351C2BE2C400ADEC51 /* COTableViewCell.h */,
 				E91DEE361C2BE2C400ADEC51 /* COTableViewCell.m */,
 				E91DEE371C2BE2C400ADEC51 /* COTableViewCell.xib */,
-				E91DEE3E1C2C0C4200ADEC51 /* COCourseViewController.h */,
-				E91DEE3F1C2C0C4200ADEC51 /* COCourseViewController.m */,
-				E91DEE401C2C0C4200ADEC51 /* COCourseViewController.xib */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -485,7 +483,6 @@
 				E91DEE3B1C2BE2C400ADEC51 /* COTableViewCell.xib in Resources */,
 				E91DED911C2A7CA600ADEC51 /* Assets.xcassets in Resources */,
 				E91DED8F1C2A7CA600ADEC51 /* Main.storyboard in Resources */,
-				E91DEE441C2C0C4200ADEC51 /* COCourseViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -494,7 +491,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				E91DEE3C1C2BE2C400ADEC51 /* COTableViewCell.xib in Resources */,
-				E91DEE451C2C0C4200ADEC51 /* COCourseViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -503,7 +499,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				E91DEE3D1C2BE2C400ADEC51 /* COTableViewCell.xib in Resources */,
-				E91DEE461C2C0C4200ADEC51 /* COCourseViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -515,12 +510,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				E91DEDF61C2AAC7A00ADEC51 /* AFURLRequestSerialization.m in Sources */,
-				E91DEE411C2C0C4200ADEC51 /* COCourseViewController.m in Sources */,
+				E945740F1C326E9600228EF0 /* COCoursesViewController.m in Sources */,
 				E91DEE0E1C2AAC7A00ADEC51 /* UIImageView+AFNetworking.m in Sources */,
 				E91DEE1C1C2AACDF00ADEC51 /* COModel.m in Sources */,
 				E91DED8C1C2A7CA600ADEC51 /* ViewController.m in Sources */,
 				E91DED891C2A7CA600ADEC51 /* AppDelegate.m in Sources */,
 				E91DEE111C2AAC7A00ADEC51 /* UIProgressView+AFNetworking.m in Sources */,
+				E9DD68121C2F03A8009C17E8 /* COFavorites.m in Sources */,
 				E91DEE021C2AAC7A00ADEC51 /* AFImageDownloader.m in Sources */,
 				E91DEE281C2B8BF500ADEC51 /* COCourses.m in Sources */,
 				E91DEDFF1C2AAC7A00ADEC51 /* AFAutoPurgingImageCache.m in Sources */,
@@ -568,7 +564,6 @@
 				E91DEDEE1C2AAC7A00ADEC51 /* AFHTTPSessionManager.m in Sources */,
 				E91DEE2E1C2BD9F600ADEC51 /* COBasicInfo.m in Sources */,
 				E91DEE1D1C2AACDF00ADEC51 /* COModel.m in Sources */,
-				E91DEE421C2C0C4200ADEC51 /* COCourseViewController.m in Sources */,
 				E91DEE031C2AAC7A00ADEC51 /* AFImageDownloader.m in Sources */,
 				E91DEE091C2AAC7A00ADEC51 /* UIActivityIndicatorView+AFNetworking.m in Sources */,
 			);
@@ -599,7 +594,6 @@
 				E91DEDEF1C2AAC7A00ADEC51 /* AFHTTPSessionManager.m in Sources */,
 				E91DEE2F1C2BD9F600ADEC51 /* COBasicInfo.m in Sources */,
 				E91DEE1E1C2AACDF00ADEC51 /* COModel.m in Sources */,
-				E91DEE431C2C0C4200ADEC51 /* COCourseViewController.m in Sources */,
 				E91DEE041C2AAC7A00ADEC51 /* AFImageDownloader.m in Sources */,
 				E91DEE0A1C2AAC7A00ADEC51 /* UIActivityIndicatorView+AFNetworking.m in Sources */,
 			);
@@ -813,6 +807,7 @@
 				E91DEDB01C2A7CA600ADEC51 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E91DEDB11C2A7CA600ADEC51 /* Build configuration list for PBXNativeTarget "CourseraOnlineTests" */ = {
 			isa = XCConfigurationList;
@@ -821,6 +816,7 @@
 				E91DEDB31C2A7CA600ADEC51 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E91DEDB41C2A7CA600ADEC51 /* Build configuration list for PBXNativeTarget "CourseraOnlineUITests" */ = {
 			isa = XCConfigurationList;
@@ -829,6 +825,7 @@
 				E91DEDB61C2A7CA600ADEC51 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

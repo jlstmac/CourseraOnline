@@ -11,7 +11,8 @@
 #import "UIRefreshControl+AFNetworking.h"
 #import "COModel.h"
 #import "COTableViewCell.h"
-#import "COCourseViewController.h"
+#import "COCoursesViewController.h"
+#import "COCourses.h"
 
 @interface COHomeViewController ()
 
@@ -92,7 +93,6 @@
 - (CGFloat)tableView:(__unused UITableView *)tableView
 heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-//    return [COTableViewCell heightForCellWithPost:self.model.BasicInfoArray[(NSUInteger)indexPath.row]];
     return 70;
 }
 
@@ -101,7 +101,9 @@ didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     
-    COCourseViewController* vc = [[COCourseViewController alloc] initWithNibName:@"COCourseViewController" bundle:nil];
+    COCoursesViewController* vc = [[COCoursesViewController alloc] init];
+    COCourses* courses = [[COCourses alloc] initWithBasicInfo:self.model.BasicInfoArray[(NSUInteger)indexPath.row]];
+    [vc setCourse:courses];
     [self.navigationController pushViewController:vc animated:YES];
 }
 /*
